@@ -49,7 +49,7 @@ test.describe('Validate create new administrative user', () => {
         await administrativeModulePage.inputPositionArea('4654+-*/');
         await administrativeModulePage.inputPhoneNumber('0987654321');
         await administrativeModulePage.clickInsertButton();
-        await administrativeModulePage.validateInvalidFormatOnNamesFieldsMessage('Campo Primer nombre es inválido. Campo Segundo nombre es inválido. Campo Primer apellido es inválido. Campo Segundo apellido es inválido. Campo �rea del cargo inválido. Campo cargo inválido.')
+        await administrativeModulePage.validateInvalidFormatOnNamesFieldsMessage('Campo Primer nombre es inválido. Campo Segundo nombre es inválido. Campo Primer apellido es inválido. Campo Segundo apellido es inválido. Campo Área del cargo inválido. Campo cargo inválido.')
         await administrativeModulePage.clickOnCorrectButton();
 
     });

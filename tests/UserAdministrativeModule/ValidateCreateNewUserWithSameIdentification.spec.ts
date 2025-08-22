@@ -59,7 +59,7 @@ test.describe('Validate response when trying to create with an already created i
         await administrativeModulePage.inputConfirmationPassword('123');
         await administrativeModulePage.clickInsertButton();
         await administrativeModulePage.clickConfirmCreationButton();
-        await administrativeModulePage.validateSuccessfulUserCreationMessage('tu transacci?n ha sido procesada exitosamente.');
+        await administrativeModulePage.validateSuccessfulUserCreationMessage('tu transacci�n ha sido procesada exitosamente.');
 
         // Intentar crear segundo usuario con la misma identificación
         await administrativeModulePage.inputUserName('anonimo04');
@@ -79,6 +79,6 @@ test.describe('Validate response when trying to create with an already created i
         await administrativeModulePage.inputConfirmationPassword('123');
         await administrativeModulePage.clickInsertButton();
         await administrativeModulePage.clickConfirmCreationButton();
-        await administrativeModulePage.validateExistingIdentificationMessage('el nro. de identificaci�n 0912345675. Ya se encuentra registrado.');
+        await administrativeModulePage.validateExistingIdentificationMessage('el nro. de identificacion 0912345675. Ya se encuentra registrado.');
     });
 });

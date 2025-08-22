@@ -52,7 +52,7 @@ test.describe('Validate error when sending invalid confirmation password', () =>
         await administrativeModulePage.inputConfirmationPassword('Holamundo1');
         await administrativeModulePage.clickInsertButton();
         // Validar el mensaje de error esperado
-        await administrativeModulePage.validateInvalidPasswordMessage('La contrase&ntilde;a ingresada es incorrecta.');
+        await administrativeModulePage.validateInvalidPasswordMessage('La contraseña ingresada es incorrecta.');
         await administrativeModulePage.clickOnCorrectButton();
     });
 });

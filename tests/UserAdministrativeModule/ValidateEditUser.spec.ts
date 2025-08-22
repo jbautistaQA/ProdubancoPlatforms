@@ -58,7 +58,7 @@ test.describe('Validate response when editing a user', () => {
         await administrativeModulePage.inputConfirmationPassword('123');
         await administrativeModulePage.clickInsertButton();
         await administrativeModulePage.clickConfirmCreationButton();
-        await administrativeModulePage.validateSuccessfulUserCreationMessage('tu transacci?n ha sido procesada exitosamente.')
+        await administrativeModulePage.validateSuccessfulUserCreationMessage('tu transacci�n ha sido procesada exitosamente.')
 
         await administrativeModulePage.searchUser("anonimo06");
         await administrativeModulePage.clickOnSearchButton();
@@ -88,7 +88,7 @@ test.describe('Validate response when editing a user', () => {
         await administrativeModulePage.inputConfirmationPassword('123');
         await administrativeModulePage.clickOnUpdateButton();
         await administrativeModulePage.clickConfirmCreationButton();
-        await administrativeModulePage.validateSuccessfulUserEditationMessage('tu transacci�n ha sido procesada exitosamente.')
+        await administrativeModulePage.validateSuccessfulUserEditationMessage('tu transaccion ha sido procesada exitosamente.')
 
         await administrativeModulePage.searchUser("anonimo06");
         await administrativeModulePage.clickOnSearchButton();

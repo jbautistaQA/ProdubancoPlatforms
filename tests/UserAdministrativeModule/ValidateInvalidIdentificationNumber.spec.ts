@@ -52,6 +52,6 @@ test.describe('Validate response when trying to create with an invalid identific
         await administrativeModulePage.inputConfirmationPassword('123');
         await administrativeModulePage.clickInsertButton();
         await administrativeModulePage.clickConfirmCreationButton();
-        await administrativeModulePage.validateInvalidIdentificacionNumberMessage('el n�mero de identificaci�n 8956464604 es inv�lido.');
+        await administrativeModulePage.validateInvalidIdentificacionNumberMessage('el numero de identificacion 8956464604 es invalido.');
     });
 });

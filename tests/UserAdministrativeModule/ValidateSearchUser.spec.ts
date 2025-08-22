@@ -57,7 +57,7 @@ test.describe('Validate search user', () => {
         await administrativeModulePage.inputConfirmationPassword('123');
         await administrativeModulePage.clickInsertButton();
         await administrativeModulePage.clickConfirmCreationButton();
-        await administrativeModulePage.validateSuccessfulUserCreationMessage('tu transacci?n ha sido procesada exitosamente.');
+        await administrativeModulePage.validateSuccessfulUserCreationMessage('tu transacci�n ha sido procesada exitosamente.');
 
         // Buscar usuario
         await administrativeModulePage.searchUser("anonimo07");

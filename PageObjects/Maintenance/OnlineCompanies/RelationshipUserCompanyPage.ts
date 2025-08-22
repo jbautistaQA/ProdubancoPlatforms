@@ -41,7 +41,7 @@ export class RelationshipUserCompanyPage {
         this.addProductsButton = page.getByRole('button', { name: 'Agregar productos' })
         this.goBackButton = page.getByRole('link', { name: '<< Volver' })
         this.emptyConfirmationPasswordMessage = page.getByText('Debe ingresar su clave de') //Debe ingresar su clave de confirmaci&oacute;n.
-        this.invalidPasswordMessage = page.getByText('La contrase&ntilde;a') //La contrase&ntilde;a ingresada es incorrecta.
+        this.invalidPasswordMessage = page.getByText('La contraseña ingresada es') //La contraseña ingresada es incorrecta.
 
     }
 
@@ -100,7 +100,6 @@ export class RelationshipUserCompanyPage {
 
     async validateInvalidPasswordMessage(message: string) {
         await expect(this.invalidPasswordMessage).toHaveText(new RegExp(message));
-        //La contrase&ntilde;a ingresada es incorrecta.
     }
 
     async clickCorrectButton() {

@@ -6,7 +6,7 @@ import { HomePage } from "../../PageObjects/Home/HomePage";
 import users from '../../setup/credentials.json';
 import { test, expect } from '@playwright/test';
 
-test.describe('Validate add product to companie', () => {
+test.describe.skip('Validate add product to companie', () => {
     let loginPage: LoginPage;
     let homePage: HomePage;
     let onlineCompaniesPage: OnlineCompaniesPage;

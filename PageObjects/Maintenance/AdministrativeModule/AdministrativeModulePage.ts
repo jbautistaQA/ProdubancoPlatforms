@@ -80,14 +80,14 @@ export class AdministrativeModulePage {
         this.editUserButton = page.locator("input[type = 'button'][value = 'M']");
         this.deleteUserButton = page.locator("input[type = 'button'][value = 'E']");
         this.resetPasswordUserButton = page.locator("input[type = 'button'][value = 'R']");
-        this.successfulUserCreationMessage = page.getByText('tu transacci?n ha sido'); //tu transacci?n ha sido procesada exitosamente.
-        this.successfulUserEditationMessage = page.getByText('tu transacci�n ha sido'); //tu transacci�n ha sido procesada exitosamente.
+        this.successfulUserCreationMessage = page.getByText('tu transacci�n ha sido'); //tu transacci�n ha sido procesada exitosamente.
+        this.successfulUserEditationMessage = page.getByText('tu transaccion ha sido'); //tu transaccion ha sido procesada exitosamente.
         this.successfulUserDeletionMessage = (message: string) => this.page.getByText(new RegExp(message));
-        this.invalidPasswordMessage = page.getByText('La contrase&ntilde;a');
+        this.invalidPasswordMessage = page.getByText('La contraseña');
         this.correctButton = page.getByRole('button', { name: 'Corregir' });
         this.emptyConfirmationPasswordMessage = page.getByText('Debe ingresar su clave de'); //Debe ingresar su clave de confirmación primero.
         this.existingUserMessage = page.getByText('ya existe un usuario'); //ya existe un usuario registrado con el mismo nombre: ANONIMO01.
-        this.existingIdentificationMessage = page.getByText('el nro. de identificaci�n'); // el nro. de identificaci�n 1103646335. Ya se encuentra registrado
+        this.existingIdentificationMessage = page.getByText('el nro. de identificacion'); // el nro. de identificaci�n 1103646335. Ya se encuentra registrado
         this.emptyFieldsValidationMessage = page.getByText('El campo Usuario está vacío.');
         this.invalidNamesFormatMessage = page.getByText('Campo Primer nombre es invá');
         this.invalidIdentificationNumberFormatMessage = page.getByText('Campo Identificación inválido.');
@@ -95,7 +95,7 @@ export class AdministrativeModulePage {
         this.invalidPhoneFormatMessage = page.getByText('Campo Número telefónico invá')
         this.invalidUsernameFormatMessage = page.getByText('El nombre de usuario debe ser')
         this.invalidLengthPhoneFormatMessage = page.getByText('Longitud no permitida en')
-        this.invalidIdentificacionNumberMessage = page.getByText('el n�mero de identificaci�n')
+        this.invalidIdentificacionNumberMessage = page.getByText('el numero de identificacion')
     }
 
     async searchUser(username: string) {

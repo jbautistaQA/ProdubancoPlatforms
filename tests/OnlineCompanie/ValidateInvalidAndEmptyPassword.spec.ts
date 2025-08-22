@@ -60,14 +60,14 @@ test.describe('Validate invalid and empty confirmation password in relationship 
         await onlineCompaniesPage.clickAddCompanyButton();
         await relationshipUserCompanyPage.inputPassword('');
         await relationshipUserCompanyPage.clickUpdateButton();
-        await relationshipUserCompanyPage.validateEmptyConfirmationPasswordMessage('Debe ingresar su clave de confirmaci&oacute;n.');
+        await relationshipUserCompanyPage.validateEmptyConfirmationPasswordMessage('Debe ingresar su clave de confirmación.');
         await relationshipUserCompanyPage.clickCorrectButton();
 
 
         //Validar con contraseña invalida
         await relationshipUserCompanyPage.inputPassword('invalidPassword');
         await relationshipUserCompanyPage.clickUpdateButton();
-        await relationshipUserCompanyPage.validateInvalidPasswordMessage('La contrase&ntilde;a ingresada es incorrecta.');
+        await relationshipUserCompanyPage.validateInvalidPasswordMessage('La contraseña ingresada es incorrecta.');
         await relationshipUserCompanyPage.clickCorrectButton();
     });
 });
