@@ -7,6 +7,8 @@ export class RelationshipUserCompanyPage {
         return new RelationshipUserCompanyPage(page);
     }
 
+    static RELATIONSHIPUSERCOMPANY_URL = 'https://tomcat-t-ecuador-server.novopayment.net/admnovoWebProd/relacionUsuarioEmpresa.do';
+
     readonly groupCompanies: Locator;
     readonly userCompanies: Locator;
     readonly arrowRightButton: Locator;

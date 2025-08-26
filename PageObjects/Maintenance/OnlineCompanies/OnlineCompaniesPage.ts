@@ -261,14 +261,6 @@ export class OnlineCompaniesPage {
         await expect(this.confirmCreationMessage).toHaveText(message);
     }
 
-    /*async validateTableRow(user: string, fullName: string, email: string, status: string) {
-        // Busca la fila que contiene todas las celdas esperadas
-        await expect(this.page.getByRole('cell', { name: user, exact: true })).toHaveText(user);
-        await expect(this.page.getByRole('cell', { name: fullName, exact: true })).toHaveText(fullName);
-        await expect(this.page.getByRole('cell', { name: email, exact: true })).toHaveText(email);
-        await expect(this.page.getByRole('cell', { name: status, exact: true })).toHaveText(status);
-    }*/
-
     async validateTableRow(user: string, fullName: string, email: string, status: string) {
         const userCell = this.page.locator(`//td[normalize-space()='${user}']`);
         const fullNameCell = this.page.locator(`//td[normalize-space()='${fullName}']`);

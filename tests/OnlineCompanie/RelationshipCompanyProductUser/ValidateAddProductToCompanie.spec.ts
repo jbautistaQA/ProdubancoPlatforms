@@ -1,9 +1,9 @@
-import { RelationshipCompanyProductUserPage } from '../../PageObjects/Maintenance/OnlineCompanies/RelationshipCompanyProductUserPage';
-import { RelationshipUserCompanyPage } from '../../PageObjects/Maintenance/OnlineCompanies/RelationshipUserCompanyPage';
-import { OnlineCompaniesPage } from '../../PageObjects/Maintenance/OnlineCompanies/OnlineCompaniesPage';
-import { LoginPage } from "../../PageObjects/Login/LoginPage";
-import { HomePage } from "../../PageObjects/Home/HomePage";
-import users from '../../setup/credentials.json';
+import { RelationshipCompanyProductUserPage } from '../../../PageObjects/Maintenance/OnlineCompanies/RelationshipCompanyProductUserPage';
+import { RelationshipUserCompanyPage } from '../../../PageObjects/Maintenance/OnlineCompanies/RelationshipUserCompanyPage';
+import { OnlineCompaniesPage } from '../../../PageObjects/Maintenance/OnlineCompanies/OnlineCompaniesPage';
+import { LoginPage } from "../../../PageObjects/Login/LoginPage";
+import { HomePage } from "../../../PageObjects/Home/HomePage";
+import users from '../../../setup/credentials.json';
 import { test, expect } from '@playwright/test';
 
 test.describe.skip('Validate add product to companie', () => {

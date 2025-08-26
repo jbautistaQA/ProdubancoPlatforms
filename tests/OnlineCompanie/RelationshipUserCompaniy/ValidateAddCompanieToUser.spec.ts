@@ -1,9 +1,9 @@
-import { OnlineCompaniesPage } from '../../PageObjects/Maintenance/OnlineCompanies/OnlineCompaniesPage';
-import { LoginPage } from "../../PageObjects/Login/LoginPage";
-import { HomePage } from "../../PageObjects/Home/HomePage";
-import users from '../../setup/credentials.json';
+import { OnlineCompaniesPage } from '../../../PageObjects/Maintenance/OnlineCompanies/OnlineCompaniesPage';
+import { LoginPage } from "../../../PageObjects/Login/LoginPage";
+import { HomePage } from "../../../PageObjects/Home/HomePage";
+import users from '../../../setup/credentials.json';
 import { test, expect } from '@playwright/test';
-import { RelationshipUserCompanyPage } from '../../PageObjects/Maintenance/OnlineCompanies/RelationshipUserCompanyPage';
+import { RelationshipUserCompanyPage } from '../../../PageObjects/Maintenance/OnlineCompanies/RelationshipUserCompanyPage';
 
 test.describe('Validate add companie to user', () => {
     let loginPage: LoginPage;
